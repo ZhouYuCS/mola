@@ -1,0 +1,27 @@
+/home/zy/miniconda3/envs/llama_factory/lib/python3.10/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 304: OS call failed or operation not supported on this OS (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+/home/zy/miniconda3/envs/llama_factory/lib/python3.10/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 304: OS call failed or operation not supported on this OS (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+Traceback (most recent call last):
+  File "/home/zy/Matrix-Game/Matrix-Game-2/inference.py", line 10, in <module>
+    from pipeline import CausalInferencePipeline
+  File "/home/zy/Matrix-Game/Matrix-Game-2/pipeline/__init__.py", line 1, in <module>
+    from .causal_inference import CausalInferencePipeline, CausalInferenceStreamingPipeline
+  File "/home/zy/Matrix-Game/Matrix-Game-2/pipeline/causal_inference.py", line 8, in <module>
+    from utils.wan_wrapper import WanDiffusionWrapper, WanVAEWrapper
+  File "/home/zy/Matrix-Game/Matrix-Game-2/utils/wan_wrapper.py", line 7, in <module>
+    from wan.modules.tokenizers import HuggingfaceTokenizer
+  File "/home/zy/Matrix-Game/Matrix-Game-2/wan/__init__.py", line 1, in <module>
+    from . import configs, distributed, modules
+  File "/home/zy/Matrix-Game/Matrix-Game-2/wan/modules/__init__.py", line 3, in <module>
+    from .t5 import T5Decoder, T5Encoder, T5EncoderModel, T5Model
+  File "/home/zy/Matrix-Game/Matrix-Game-2/wan/modules/t5.py", line 472, in <module>
+    class T5EncoderModel:
+  File "/home/zy/Matrix-Game/Matrix-Game-2/wan/modules/t5.py", line 478, in T5EncoderModel
+    device=torch.cuda.current_device(),
+  File "/home/zy/miniconda3/envs/llama_factory/lib/python3.10/site-packages/torch/cuda/__init__.py", line 940, in current_device
+    _lazy_init()
+  File "/home/zy/miniconda3/envs/llama_factory/lib/python3.10/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 304: OS call failed or operation not supported on this OS
