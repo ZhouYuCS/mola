@@ -1,0 +1,909 @@
+{
+  "spec": {
+    "requested_frames": 100,
+    "actual_latent_frames": 51,
+    "note": "100 not divisible by 3; used nearest >=100 value",
+    "num_blocks": 17,
+    "rgb_per_block": 12,
+    "lpips_net": "alex",
+    "fid_features": "inceptionv3_pool3_2048"
+  },
+  "env": {
+    "torch": "2.5.1+cu124",
+    "checkpoint_path": "/mnt/sda/zy/models/Matrix-Game-2.0/base_distilled_model/base_distill.safetensors",
+    "pretrained_model_path": "/mnt/sda/zy/models/Matrix-Game-2.0",
+    "config_path": "configs/inference_yaml/inference_universal.yaml",
+    "kv_bank_on_gpu": true,
+    "qvg_sparsify": true,
+    "qvg_kmeans_iters": 4,
+    "qvg_num_stages": 1,
+    "qvg_sparse_ratio": 0.5,
+    "qvg_gamma": 1.0
+  },
+  "seed": 0,
+  "trajectory_shape": "strafe",
+  "revisit_pairs": [
+    [
+      6,
+      8
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      2,
+      12
+    ],
+    [
+      1,
+      13
+    ],
+    [
+      0,
+      14
+    ]
+  ],
+  "imgs": [
+    "0000.png",
+    "0001.png",
+    "0002.png",
+    "0003.png",
+    "0004.png",
+    "0005.png",
+    "0006.png",
+    "0007.png",
+    "0008.png",
+    "0009.png"
+  ],
+  "methods": {
+    "full_kv": {
+      "revisit": {
+        "n_total": 10,
+        "n_success": 10,
+        "lpips_mean": 0.4067226009709494,
+        "lpips_std": 0.0884211238092976,
+        "psnr_mean": 13.808620361135734,
+        "psnr_std": 2.4078148279231053,
+        "ssim_mean": 0.3529123374394008,
+        "ssim_std": 0.17906033505903857,
+        "fid": 127.189615594974
+      },
+      "all_frame": {
+        "lpips_mean": null,
+        "lpips_std": null,
+        "psnr_mean": null,
+        "psnr_std": null,
+        "ssim_mean": null,
+        "ssim_std": null,
+        "fid": null
+      },
+      "speed": {
+        "wan_latency_mean": 50.98717175005004,
+        "vae_latency_mean": 7.462011074228212,
+        "bank_mb_mean": 0.0,
+        "peak_gpu_mb_mean": 11676.4954112
+      }
+    }
+  },
+  "per_run": [
+    {
+      "img": "0000.png",
+      "method": "full_kv",
+      "status": "ok",
+      "revisit": {
+        "lpips": 0.4961511492729187,
+        "psnr": 10.269512288636633,
+        "ssim": 0.20723411866596766
+      },
+      "per_pair": [
+        {
+          "ref_block": 6,
+          "revisit_block": 8,
+          "ref_rgb_idx": 80,
+          "revisit_rgb_idx": 104,
+          "lpips": 0.4245738685131073,
+          "psnr": 11.875667336153198,
+          "ssim": 0.21735186874866486
+        },
+        {
+          "ref_block": 5,
+          "revisit_block": 9,
+          "ref_rgb_idx": 68,
+          "revisit_rgb_idx": 116,
+          "lpips": 0.4589754343032837,
+          "psnr": 11.365907390005018,
+          "ssim": 0.22547297179698944
+        },
+        {
+          "ref_block": 4,
+          "revisit_block": 10,
+          "ref_rgb_idx": 56,
+          "revisit_rgb_idx": 128,
+          "lpips": 0.5134838819503784,
+          "psnr": 9.553778921349673,
+          "ssim": 0.19411902129650116
+        },
+        {
+          "ref_block": 3,
+          "revisit_block": 11,
+          "ref_rgb_idx": 44,
+          "revisit_rgb_idx": 140,
+          "lpips": 0.4954226315021515,
+          "psnr": 9.973405821137124,
+          "ssim": 0.20479530096054077
+        },
+        {
+          "ref_block": 2,
+          "revisit_block": 12,
+          "ref_rgb_idx": 32,
+          "revisit_rgb_idx": 152,
+          "lpips": 0.5037545561790466,
+          "psnr": 9.534234715172111,
+          "ssim": 0.19734515249729156
+        },
+        {
+          "ref_block": 1,
+          "revisit_block": 13,
+          "ref_rgb_idx": 20,
+          "revisit_rgb_idx": 164,
+          "lpips": 0.5090548992156982,
+          "psnr": 10.227049487828586,
+          "ssim": 0.21417078375816345
+        },
+        {
+          "ref_block": 0,
+          "revisit_block": 14,
+          "ref_rgb_idx": 8,
+          "revisit_rgb_idx": 176,
+          "lpips": 0.5677927732467651,
+          "psnr": 9.356542348810727,
+          "ssim": 0.19738373160362244
+        }
+      ],
+      "speed": {
+        "bank_mb": 0.0,
+        "peak_gpu_mb": 11674.428416,
+        "wan_latency_sec": 50.85072194458917,
+        "vae_latency_sec": 7.496047026477754
+      }
+    },
+    {
+      "img": "0001.png",
+      "method": "full_kv",
+      "status": "ok",
+      "revisit": {
+        "lpips": 0.30025583505630493,
+        "psnr": 14.035693634347592,
+        "ssim": 0.5013588794640133
+      },
+      "per_pair": [
+        {
+          "ref_block": 6,
+          "revisit_block": 8,
+          "ref_rgb_idx": 80,
+          "revisit_rgb_idx": 104,
+          "lpips": 0.2834225594997406,
+          "psnr": 14.63020120303697,
+          "ssim": 0.5374343991279602
+        },
+        {
+          "ref_block": 5,
+          "revisit_block": 9,
+          "ref_rgb_idx": 68,
+          "revisit_rgb_idx": 116,
+          "lpips": 0.2909649610519409,
+          "psnr": 14.101556862139992,
+          "ssim": 0.5315690040588379
+        },
+        {
+          "ref_block": 4,
+          "revisit_block": 10,
+          "ref_rgb_idx": 56,
+          "revisit_rgb_idx": 128,
+          "lpips": 0.28540077805519104,
+          "psnr": 13.812089896874966,
+          "ssim": 0.49070480465888977
+        },
+        {
+          "ref_block": 3,
+          "revisit_block": 11,
+          "ref_rgb_idx": 44,
+          "revisit_rgb_idx": 140,
+          "lpips": 0.2721969187259674,
+          "psnr": 14.230728102333883,
+          "ssim": 0.5050743222236633
+        },
+        {
+          "ref_block": 2,
+          "revisit_block": 12,
+          "ref_rgb_idx": 32,
+          "revisit_rgb_idx": 152,
+          "lpips": 0.310951828956604,
+          "psnr": 14.034105856513147,
+          "ssim": 0.4891360402107239
+        },
+        {
+          "ref_block": 1,
+          "revisit_block": 13,
+          "ref_rgb_idx": 20,
+          "revisit_rgb_idx": 164,
+          "lpips": 0.3153541088104248,
+          "psnr": 13.789109360383396,
+          "ssim": 0.5024680495262146
+        },
+        {
+          "ref_block": 0,
+          "revisit_block": 14,
+          "ref_rgb_idx": 8,
+          "revisit_rgb_idx": 176,
+          "lpips": 0.34349969029426575,
+          "psnr": 13.652064159150783,
+          "ssim": 0.453125536441803
+        }
+      ],
+      "speed": {
+        "bank_mb": 0.0,
+        "peak_gpu_mb": 11673.656832,
+        "wan_latency_sec": 50.626159355044365,
+        "vae_latency_sec": 7.459118359722197
+      }
+    },
+    {
+      "img": "0002.png",
+      "method": "full_kv",
+      "status": "ok",
+      "revisit": {
+        "lpips": 0.527673499924796,
+        "psnr": 10.260936255201036,
+        "ssim": 0.08376934911523547
+      },
+      "per_pair": [
+        {
+          "ref_block": 6,
+          "revisit_block": 8,
+          "ref_rgb_idx": 80,
+          "revisit_rgb_idx": 104,
+          "lpips": 0.5159514546394348,
+          "psnr": 9.25597137481754,
+          "ssim": 0.09217400848865509
+        },
+        {
+          "ref_block": 5,
+          "revisit_block": 9,
+          "ref_rgb_idx": 68,
+          "revisit_rgb_idx": 116,
+          "lpips": 0.5025948286056519,
+          "psnr": 9.755630208842291,
+          "ssim": 0.08720971643924713
+        },
+        {
+          "ref_block": 4,
+          "revisit_block": 10,
+          "ref_rgb_idx": 56,
+          "revisit_rgb_idx": 128,
+          "lpips": 0.5279218554496765,
+          "psnr": 10.317889835389892,
+          "ssim": 0.08403056114912033
+        },
+        {
+          "ref_block": 3,
+          "revisit_block": 11,
+          "ref_rgb_idx": 44,
+          "revisit_rgb_idx": 140,
+          "lpips": 0.5000608563423157,
+          "psnr": 10.429756483733419,
+          "ssim": 0.08195919543504715
+        },
+        {
+          "ref_block": 2,
+          "revisit_block": 12,
+          "ref_rgb_idx": 32,
+          "revisit_rgb_idx": 152,
+          "lpips": 0.5306050777435303,
+          "psnr": 10.78425663736313,
+          "ssim": 0.08834485709667206
+        },
+        {
+          "ref_block": 1,
+          "revisit_block": 13,
+          "ref_rgb_idx": 20,
+          "revisit_rgb_idx": 164,
+          "lpips": 0.5434035658836365,
+          "psnr": 10.577278477891106,
+          "ssim": 0.08153531700372696
+        },
+        {
+          "ref_block": 0,
+          "revisit_block": 14,
+          "ref_rgb_idx": 8,
+          "revisit_rgb_idx": 176,
+          "lpips": 0.5731768608093262,
+          "psnr": 10.705770768369888,
+          "ssim": 0.07113178819417953
+        }
+      ],
+      "speed": {
+        "bank_mb": 0.0,
+        "peak_gpu_mb": 11675.0592,
+        "wan_latency_sec": 51.3656847961247,
+        "vae_latency_sec": 7.458040378987789
+      }
+    },
+    {
+      "img": "0003.png",
+      "method": "full_kv",
+      "status": "ok",
+      "revisit": {
+        "lpips": 0.43809960569654194,
+        "psnr": 14.890198162975206,
+        "ssim": 0.5413849949836731
+      },
+      "per_pair": [
+        {
+          "ref_block": 6,
+          "revisit_block": 8,
+          "ref_rgb_idx": 80,
+          "revisit_rgb_idx": 104,
+          "lpips": 0.4016988277435303,
+          "psnr": 14.464749669094058,
+          "ssim": 0.5374516248703003
+        },
+        {
+          "ref_block": 5,
+          "revisit_block": 9,
+          "ref_rgb_idx": 68,
+          "revisit_rgb_idx": 116,
+          "lpips": 0.42534512281417847,
+          "psnr": 14.756935276200856,
+          "ssim": 0.5400970578193665
+        },
+        {
+          "ref_block": 4,
+          "revisit_block": 10,
+          "ref_rgb_idx": 56,
+          "revisit_rgb_idx": 128,
+          "lpips": 0.42315468192100525,
+          "psnr": 14.758386132724674,
+          "ssim": 0.5399215221405029
+        },
+        {
+          "ref_block": 3,
+          "revisit_block": 11,
+          "ref_rgb_idx": 44,
+          "revisit_rgb_idx": 140,
+          "lpips": 0.4082964062690735,
+          "psnr": 15.166736452264143,
+          "ssim": 0.5525190830230713
+        },
+        {
+          "ref_block": 2,
+          "revisit_block": 12,
+          "ref_rgb_idx": 32,
+          "revisit_rgb_idx": 152,
+          "lpips": 0.4473472535610199,
+          "psnr": 14.895606654864102,
+          "ssim": 0.534679114818573
+        },
+        {
+          "ref_block": 1,
+          "revisit_block": 13,
+          "ref_rgb_idx": 20,
+          "revisit_rgb_idx": 164,
+          "lpips": 0.4588281512260437,
+          "psnr": 15.442979536914985,
+          "ssim": 0.5489667057991028
+        },
+        {
+          "ref_block": 0,
+          "revisit_block": 14,
+          "ref_rgb_idx": 8,
+          "revisit_rgb_idx": 176,
+          "lpips": 0.5020267963409424,
+          "psnr": 14.745993418763614,
+          "ssim": 0.5360598564147949
+        }
+      ],
+      "speed": {
+        "bank_mb": 0.0,
+        "peak_gpu_mb": 11676.18816,
+        "wan_latency_sec": 50.76116155041382,
+        "vae_latency_sec": 7.4570296332240105
+      }
+    },
+    {
+      "img": "0004.png",
+      "method": "full_kv",
+      "status": "ok",
+      "revisit": {
+        "lpips": 0.2571486894573484,
+        "psnr": 18.23436745712813,
+        "ssim": 0.5236794011933463
+      },
+      "per_pair": [
+        {
+          "ref_block": 6,
+          "revisit_block": 8,
+          "ref_rgb_idx": 80,
+          "revisit_rgb_idx": 104,
+          "lpips": 0.17587153613567352,
+          "psnr": 18.84657251272571,
+          "ssim": 0.5750570893287659
+        },
+        {
+          "ref_block": 5,
+          "revisit_block": 9,
+          "ref_rgb_idx": 68,
+          "revisit_rgb_idx": 116,
+          "lpips": 0.23432636260986328,
+          "psnr": 17.34898116152855,
+          "ssim": 0.5277374982833862
+        },
+        {
+          "ref_block": 4,
+          "revisit_block": 10,
+          "ref_rgb_idx": 56,
+          "revisit_rgb_idx": 128,
+          "lpips": 0.25006192922592163,
+          "psnr": 17.57719759606398,
+          "ssim": 0.5282191038131714
+        },
+        {
+          "ref_block": 3,
+          "revisit_block": 11,
+          "ref_rgb_idx": 44,
+          "revisit_rgb_idx": 140,
+          "lpips": 0.24220481514930725,
+          "psnr": 18.437481751709768,
+          "ssim": 0.5383449792861938
+        },
+        {
+          "ref_block": 2,
+          "revisit_block": 12,
+          "ref_rgb_idx": 32,
+          "revisit_rgb_idx": 152,
+          "lpips": 0.276824414730072,
+          "psnr": 18.322931691084772,
+          "ssim": 0.5215672850608826
+        },
+        {
+          "ref_block": 1,
+          "revisit_block": 13,
+          "ref_rgb_idx": 20,
+          "revisit_rgb_idx": 164,
+          "lpips": 0.2913567125797272,
+          "psnr": 18.93794077434888,
+          "ssim": 0.5148871541023254
+        },
+        {
+          "ref_block": 0,
+          "revisit_block": 14,
+          "ref_rgb_idx": 8,
+          "revisit_rgb_idx": 176,
+          "lpips": 0.329395055770874,
+          "psnr": 18.169466712435238,
+          "ssim": 0.45994269847869873
+        }
+      ],
+      "speed": {
+        "bank_mb": 0.0,
+        "peak_gpu_mb": 11677.492224,
+        "wan_latency_sec": 50.825564454775304,
+        "vae_latency_sec": 7.457664514891803
+      }
+    },
+    {
+      "img": "0005.png",
+      "method": "full_kv",
+      "status": "ok",
+      "revisit": {
+        "lpips": 0.2924162170716694,
+        "psnr": 15.77157788286713,
+        "ssim": 0.48101629529680523
+      },
+      "per_pair": [
+        {
+          "ref_block": 6,
+          "revisit_block": 8,
+          "ref_rgb_idx": 80,
+          "revisit_rgb_idx": 104,
+          "lpips": 0.2520286440849304,
+          "psnr": 15.391025492547548,
+          "ssim": 0.46320581436157227
+        },
+        {
+          "ref_block": 5,
+          "revisit_block": 9,
+          "ref_rgb_idx": 68,
+          "revisit_rgb_idx": 116,
+          "lpips": 0.24891947209835052,
+          "psnr": 16.360748680556355,
+          "ssim": 0.5097194910049438
+        },
+        {
+          "ref_block": 4,
+          "revisit_block": 10,
+          "ref_rgb_idx": 56,
+          "revisit_rgb_idx": 128,
+          "lpips": 0.27201876044273376,
+          "psnr": 15.978561484360046,
+          "ssim": 0.5052645206451416
+        },
+        {
+          "ref_block": 3,
+          "revisit_block": 11,
+          "ref_rgb_idx": 44,
+          "revisit_rgb_idx": 140,
+          "lpips": 0.26717811822891235,
+          "psnr": 16.374099611869095,
+          "ssim": 0.5072696208953857
+        },
+        {
+          "ref_block": 2,
+          "revisit_block": 12,
+          "ref_rgb_idx": 32,
+          "revisit_rgb_idx": 152,
+          "lpips": 0.3229336738586426,
+          "psnr": 14.837028447150091,
+          "ssim": 0.4678937494754791
+        },
+        {
+          "ref_block": 1,
+          "revisit_block": 13,
+          "ref_rgb_idx": 20,
+          "revisit_rgb_idx": 164,
+          "lpips": 0.3239932656288147,
+          "psnr": 15.988690419778289,
+          "ssim": 0.4610888361930847
+        },
+        {
+          "ref_block": 0,
+          "revisit_block": 14,
+          "ref_rgb_idx": 8,
+          "revisit_rgb_idx": 176,
+          "lpips": 0.35984158515930176,
+          "psnr": 15.470891043808468,
+          "ssim": 0.4526720345020294
+        }
+      ],
+      "speed": {
+        "bank_mb": 0.0,
+        "peak_gpu_mb": 11677.730304,
+        "wan_latency_sec": 50.718702535144985,
+        "vae_latency_sec": 7.459311981219798
+      }
+    },
+    {
+      "img": "0006.png",
+      "method": "full_kv",
+      "status": "ok",
+      "revisit": {
+        "lpips": 0.4248831868171692,
+        "psnr": 12.584104428179547,
+        "ssim": 0.12498379179409572
+      },
+      "per_pair": [
+        {
+          "ref_block": 6,
+          "revisit_block": 8,
+          "ref_rgb_idx": 80,
+          "revisit_rgb_idx": 104,
+          "lpips": 0.34672993421554565,
+          "psnr": 12.355081852147213,
+          "ssim": 0.11778198927640915
+        },
+        {
+          "ref_block": 5,
+          "revisit_block": 9,
+          "ref_rgb_idx": 68,
+          "revisit_rgb_idx": 116,
+          "lpips": 0.38312000036239624,
+          "psnr": 12.54724538933693,
+          "ssim": 0.1261846274137497
+        },
+        {
+          "ref_block": 4,
+          "revisit_block": 10,
+          "ref_rgb_idx": 56,
+          "revisit_rgb_idx": 128,
+          "lpips": 0.3944683372974396,
+          "psnr": 12.600524615721557,
+          "ssim": 0.12050367146730423
+        },
+        {
+          "ref_block": 3,
+          "revisit_block": 11,
+          "ref_rgb_idx": 44,
+          "revisit_rgb_idx": 140,
+          "lpips": 0.3995954692363739,
+          "psnr": 12.936430963717264,
+          "ssim": 0.16007904708385468
+        },
+        {
+          "ref_block": 2,
+          "revisit_block": 12,
+          "ref_rgb_idx": 32,
+          "revisit_rgb_idx": 152,
+          "lpips": 0.4434015154838562,
+          "psnr": 12.68400839846348,
+          "ssim": 0.11807168275117874
+        },
+        {
+          "ref_block": 1,
+          "revisit_block": 13,
+          "ref_rgb_idx": 20,
+          "revisit_rgb_idx": 164,
+          "lpips": 0.46882420778274536,
+          "psnr": 12.800499037239188,
+          "ssim": 0.1265038102865219
+        },
+        {
+          "ref_block": 0,
+          "revisit_block": 14,
+          "ref_rgb_idx": 8,
+          "revisit_rgb_idx": 176,
+          "lpips": 0.5380428433418274,
+          "psnr": 12.1649407406312,
+          "ssim": 0.10576171427965164
+        }
+      ],
+      "speed": {
+        "bank_mb": 0.0,
+        "peak_gpu_mb": 11676.79232,
+        "wan_latency_sec": 51.367016253992915,
+        "vae_latency_sec": 7.456290191039443
+      }
+    },
+    {
+      "img": "0007.png",
+      "method": "full_kv",
+      "status": "ok",
+      "revisit": {
+        "lpips": 0.45454168745449613,
+        "psnr": 12.137969047269255,
+        "ssim": 0.13995487987995148
+      },
+      "per_pair": [
+        {
+          "ref_block": 6,
+          "revisit_block": 8,
+          "ref_rgb_idx": 80,
+          "revisit_rgb_idx": 104,
+          "lpips": 0.35527849197387695,
+          "psnr": 12.261531595171737,
+          "ssim": 0.131364643573761
+        },
+        {
+          "ref_block": 5,
+          "revisit_block": 9,
+          "ref_rgb_idx": 68,
+          "revisit_rgb_idx": 116,
+          "lpips": 0.3889397978782654,
+          "psnr": 11.972542977436076,
+          "ssim": 0.13406744599342346
+        },
+        {
+          "ref_block": 4,
+          "revisit_block": 10,
+          "ref_rgb_idx": 56,
+          "revisit_rgb_idx": 128,
+          "lpips": 0.4420187771320343,
+          "psnr": 12.269550589043053,
+          "ssim": 0.14495328068733215
+        },
+        {
+          "ref_block": 3,
+          "revisit_block": 11,
+          "ref_rgb_idx": 44,
+          "revisit_rgb_idx": 140,
+          "lpips": 0.41981208324432373,
+          "psnr": 12.380565007027807,
+          "ssim": 0.15816381573677063
+        },
+        {
+          "ref_block": 2,
+          "revisit_block": 12,
+          "ref_rgb_idx": 32,
+          "revisit_rgb_idx": 152,
+          "lpips": 0.4918643832206726,
+          "psnr": 12.06807084431006,
+          "ssim": 0.14546841382980347
+        },
+        {
+          "ref_block": 1,
+          "revisit_block": 13,
+          "ref_rgb_idx": 20,
+          "revisit_rgb_idx": 164,
+          "lpips": 0.5034727454185486,
+          "psnr": 12.22062807859183,
+          "ssim": 0.14010435342788696
+        },
+        {
+          "ref_block": 0,
+          "revisit_block": 14,
+          "ref_rgb_idx": 8,
+          "revisit_rgb_idx": 176,
+          "lpips": 0.5804055333137512,
+          "psnr": 11.792894239304225,
+          "ssim": 0.12556220591068268
+        }
+      ],
+      "speed": {
+        "bank_mb": 0.0,
+        "peak_gpu_mb": 11676.870144,
+        "wan_latency_sec": 51.54855502769351,
+        "vae_latency_sec": 7.457863671705127
+      }
+    },
+    {
+      "img": "0008.png",
+      "method": "full_kv",
+      "status": "ok",
+      "revisit": {
+        "lpips": 0.47816431522369385,
+        "psnr": 14.143971361813161,
+        "ssim": 0.49716055393218994
+      },
+      "per_pair": [
+        {
+          "ref_block": 6,
+          "revisit_block": 8,
+          "ref_rgb_idx": 80,
+          "revisit_rgb_idx": 104,
+          "lpips": 0.5287600755691528,
+          "psnr": 12.667462536701297,
+          "ssim": 0.5088036060333252
+        },
+        {
+          "ref_block": 5,
+          "revisit_block": 9,
+          "ref_rgb_idx": 68,
+          "revisit_rgb_idx": 116,
+          "lpips": 0.513813316822052,
+          "psnr": 13.658894287568382,
+          "ssim": 0.47782692313194275
+        },
+        {
+          "ref_block": 4,
+          "revisit_block": 10,
+          "ref_rgb_idx": 56,
+          "revisit_rgb_idx": 128,
+          "lpips": 0.4675567150115967,
+          "psnr": 14.183013375552921,
+          "ssim": 0.5363802909851074
+        },
+        {
+          "ref_block": 3,
+          "revisit_block": 11,
+          "ref_rgb_idx": 44,
+          "revisit_rgb_idx": 140,
+          "lpips": 0.4602087736129761,
+          "psnr": 14.159253676292868,
+          "ssim": 0.5186178088188171
+        },
+        {
+          "ref_block": 2,
+          "revisit_block": 12,
+          "ref_rgb_idx": 32,
+          "revisit_rgb_idx": 152,
+          "lpips": 0.47474029660224915,
+          "psnr": 13.940587931019861,
+          "ssim": 0.482736200094223
+        },
+        {
+          "ref_block": 1,
+          "revisit_block": 13,
+          "ref_rgb_idx": 20,
+          "revisit_rgb_idx": 164,
+          "lpips": 0.45837968587875366,
+          "psnr": 14.991584181721256,
+          "ssim": 0.46075838804244995
+        },
+        {
+          "ref_block": 0,
+          "revisit_block": 14,
+          "ref_rgb_idx": 8,
+          "revisit_rgb_idx": 176,
+          "lpips": 0.44369134306907654,
+          "psnr": 15.407003543835556,
+          "ssim": 0.4950006604194641
+        }
+      ],
+      "speed": {
+        "bank_mb": 0.0,
+        "peak_gpu_mb": 11679.079936,
+        "wan_latency_sec": 50.913358396384865,
+        "vae_latency_sec": 7.459328522440046
+      }
+    },
+    {
+      "img": "0009.png",
+      "method": "full_kv",
+      "status": "ok",
+      "revisit": {
+        "lpips": 0.39789182373455595,
+        "psnr": 15.757873092939649,
+        "ssim": 0.42858111006872995
+      },
+      "per_pair": [
+        {
+          "ref_block": 6,
+          "revisit_block": 8,
+          "ref_rgb_idx": 80,
+          "revisit_rgb_idx": 104,
+          "lpips": 0.32576367259025574,
+          "psnr": 15.39786788630253,
+          "ssim": 0.44439852237701416
+        },
+        {
+          "ref_block": 5,
+          "revisit_block": 9,
+          "ref_rgb_idx": 68,
+          "revisit_rgb_idx": 116,
+          "lpips": 0.3635832667350769,
+          "psnr": 15.455729338102493,
+          "ssim": 0.45974698662757874
+        },
+        {
+          "ref_block": 4,
+          "revisit_block": 10,
+          "ref_rgb_idx": 56,
+          "revisit_rgb_idx": 128,
+          "lpips": 0.41343826055526733,
+          "psnr": 15.655032573290452,
+          "ssim": 0.4353815019130707
+        },
+        {
+          "ref_block": 3,
+          "revisit_block": 11,
+          "ref_rgb_idx": 44,
+          "revisit_rgb_idx": 140,
+          "lpips": 0.3698934316635132,
+          "psnr": 16.75232507973371,
+          "ssim": 0.4670741558074951
+        },
+        {
+          "ref_block": 2,
+          "revisit_block": 12,
+          "ref_rgb_idx": 32,
+          "revisit_rgb_idx": 152,
+          "lpips": 0.42369353771209717,
+          "psnr": 15.717576959617556,
+          "ssim": 0.41871511936187744
+        },
+        {
+          "ref_block": 1,
+          "revisit_block": 13,
+          "ref_rgb_idx": 20,
+          "revisit_rgb_idx": 164,
+          "lpips": 0.4215519428253174,
+          "psnr": 16.35677411522352,
+          "ssim": 0.42166218161582947
+        },
+        {
+          "ref_block": 0,
+          "revisit_block": 14,
+          "ref_rgb_idx": 8,
+          "revisit_rgb_idx": 176,
+          "lpips": 0.46731865406036377,
+          "psnr": 14.969805698307276,
+          "ssim": 0.353089302778244
+        }
+      ],
+      "speed": {
+        "bank_mb": 0.0,
+        "peak_gpu_mb": 11677.656576,
+        "wan_latency_sec": 50.894793186336756,
+        "vae_latency_sec": 7.459416462574154
+      }
+    }
+  ]
+}

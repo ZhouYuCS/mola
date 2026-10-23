@@ -1,0 +1,27 @@
+[2026-10-22 21:02:02] 测试图（10 张）：['demo_images/universal/0000.png', 'demo_images/universal/0001.png', 'demo_images/universal/0002.png', 'demo_images/universal/0003.png', 'demo_images/universal/0004.png', 'demo_images/universal/0005.png', 'demo_images/universal/0006.png', 'demo_images/universal/0007.png', 'demo_images/universal/0008.png', 'demo_images/universal/0009.png']
+[2026-10-22 21:02:02] 轨迹形态=strafe，blocks=17，回访对=[(6, 8), (5, 9), (4, 10), (3, 11), (2, 12), (1, 13), (0, 14)]
+[2026-10-22 21:02:18] --- 图 1/10: 0000.png ---
+[2026-10-22 21:03:21]   [full_kv] revisit_lpips=0.4962 psnr=10.27 ssim=0.2072 wan=50.85s vae=7.50s
+[2026-10-22 21:03:21] --- 图 2/10: 0001.png ---
+[2026-10-22 21:04:23]   [full_kv] revisit_lpips=0.3003 psnr=14.04 ssim=0.5014 wan=50.63s vae=7.46s
+[2026-10-22 21:04:24] --- 图 3/10: 0002.png ---
+[2026-10-22 21:05:27]   [full_kv] revisit_lpips=0.5277 psnr=10.26 ssim=0.0838 wan=51.37s vae=7.46s
+[2026-10-22 21:05:27] --- 图 4/10: 0003.png ---
+[2026-10-22 21:06:30]   [full_kv] revisit_lpips=0.4381 psnr=14.89 ssim=0.5414 wan=50.76s vae=7.46s
+[2026-10-22 21:06:30] --- 图 5/10: 0004.png ---
+[2026-10-22 21:07:33]   [full_kv] revisit_lpips=0.2571 psnr=18.23 ssim=0.5237 wan=50.83s vae=7.46s
+[2026-10-22 21:07:33] --- 图 6/10: 0005.png ---
+[2026-10-22 21:08:36]   [full_kv] revisit_lpips=0.2924 psnr=15.77 ssim=0.4810 wan=50.72s vae=7.46s
+[2026-10-22 21:08:36] --- 图 7/10: 0006.png ---
+[2026-10-22 21:09:39]   [full_kv] revisit_lpips=0.4249 psnr=12.58 ssim=0.1250 wan=51.37s vae=7.46s
+[2026-10-22 21:09:40] --- 图 8/10: 0007.png ---
+[2026-10-22 21:10:43]   [full_kv] revisit_lpips=0.4545 psnr=12.14 ssim=0.1400 wan=51.55s vae=7.46s
+[2026-10-22 21:10:44] --- 图 9/10: 0008.png ---
+[2026-10-22 21:11:46]   [full_kv] revisit_lpips=0.4782 psnr=14.14 ssim=0.4972 wan=50.91s vae=7.46s
+[2026-10-22 21:11:47] --- 图 10/10: 0009.png ---
+[2026-10-22 21:12:50]   [full_kv] revisit_lpips=0.3979 psnr=15.76 ssim=0.4286 wan=50.89s vae=7.46s
+[2026-10-22 21:12:52] 
+===== 回访帧对指标（跨图平均）=====
+[2026-10-22 21:12:52]   full_kv     : lpips=0.4067226009709494 psnr=13.808620361135734 ssim=0.3529123374394008 fid=127.189615594974 (n=10/10)
+[2026-10-22 21:12:52] 结果 JSON 已保存到 outputs_full_kv_10img_51f/results.json
+[2026-10-22 21:12:52] 报告已保存到 outputs_full_kv_10img_51f/评价报告.md

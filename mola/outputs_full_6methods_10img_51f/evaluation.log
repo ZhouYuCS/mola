@@ -1,0 +1,82 @@
+[2026-10-23 09:30:44] 测试图（10 张）：['demo_images/universal/0000.png', 'demo_images/universal/0001.png', 'demo_images/universal/0002.png', 'demo_images/universal/0003.png', 'demo_images/universal/0004.png', 'demo_images/universal/0005.png', 'demo_images/universal/0006.png', 'demo_images/universal/0007.png', 'demo_images/universal/0008.png', 'demo_images/universal/0009.png']
+[2026-10-23 09:30:44] 轨迹形态=strafe，blocks=17，回访对=[(6, 8), (5, 9), (4, 10), (3, 11), (2, 12), (1, 13), (0, 14)]
+[2026-10-23 09:31:03] --- 图 1/10: 0000.png ---
+[2026-10-23 09:35:07]   [full_kv] revisit_lpips=0.4962 psnr=10.27 ssim=0.2072 wan=230.85s vae=7.72s
+[2026-10-23 09:35:48]   [fastar_full@0.8] rev_lpips=0.5561 rev_psnr=10.44 all_lpips=0.3265 bank=2136.2MB peak=17.72GiB wan=32.77s vae=7.63s
+[2026-10-23 09:36:13]   [quanevict   ] rev_lpips=0.4999 rev_psnr=9.78 all_lpips=0.2110 bank=2536.8MB peak=17.68GiB wan=15.69s vae=7.61s
+[2026-10-23 09:36:38]   [quanevict_plus] rev_lpips=0.5051 rev_psnr=9.92 all_lpips=0.2210 bank=1279.3MB peak=16.73GiB wan=15.41s vae=7.62s
+[2026-10-23 09:37:06]   [worldkv     ] rev_lpips=0.5048 rev_psnr=9.69 all_lpips=0.2257 bank=3897.9MB peak=14.04GiB wan=19.47s vae=7.60s
+[2026-10-23 09:38:58]   [flowcache   ] rev_lpips=0.5107 rev_psnr=10.15 all_lpips=0.2415 bank=3696.0MB peak=17.66GiB wan=102.13s vae=7.61s
+[2026-10-23 09:38:58] --- 图 2/10: 0001.png ---
+[2026-10-23 09:43:02]   [full_kv] revisit_lpips=0.3003 psnr=14.04 ssim=0.5014 wan=230.86s vae=7.70s
+[2026-10-23 09:43:42]   [fastar_full@0.8] rev_lpips=0.3030 rev_psnr=14.52 all_lpips=0.1950 bank=1395.9MB peak=15.72GiB wan=31.44s vae=7.65s
+[2026-10-23 09:44:06]   [quanevict   ] rev_lpips=0.3080 rev_psnr=13.64 all_lpips=0.1211 bank=2536.8MB peak=17.68GiB wan=15.45s vae=7.62s
+[2026-10-23 09:44:31]   [quanevict_plus] rev_lpips=0.3111 rev_psnr=13.45 all_lpips=0.1228 bank=1279.3MB peak=16.73GiB wan=15.42s vae=7.63s
+[2026-10-23 09:44:59]   [worldkv     ] rev_lpips=0.3136 rev_psnr=13.50 all_lpips=0.1272 bank=3897.9MB peak=14.04GiB wan=19.46s vae=7.63s
+[2026-10-23 09:46:51]   [flowcache   ] rev_lpips=0.3235 rev_psnr=13.36 all_lpips=0.1738 bank=3696.0MB peak=17.66GiB wan=102.46s vae=7.63s
+[2026-10-23 09:46:52] --- 图 3/10: 0002.png ---
+[2026-10-23 09:50:55]   [full_kv] revisit_lpips=0.5277 psnr=10.26 ssim=0.0838 wan=230.80s vae=7.71s
+[2026-10-23 09:51:37]   [fastar_full@0.8] rev_lpips=0.5507 rev_psnr=10.05 all_lpips=0.3701 bank=2311.3MB peak=18.23GiB wan=33.10s vae=7.65s
+[2026-10-23 09:52:01]   [quanevict   ] rev_lpips=0.5464 rev_psnr=10.09 all_lpips=0.2702 bank=2536.8MB peak=17.68GiB wan=15.47s vae=7.63s
+[2026-10-23 09:52:26]   [quanevict_plus] rev_lpips=0.5703 rev_psnr=9.65 all_lpips=0.2950 bank=1279.3MB peak=16.73GiB wan=15.42s vae=7.62s
+[2026-10-23 09:52:55]   [worldkv     ] rev_lpips=0.5498 rev_psnr=9.63 all_lpips=0.2685 bank=3897.9MB peak=14.04GiB wan=19.49s vae=7.62s
+[2026-10-23 09:54:46]   [flowcache   ] rev_lpips=0.5627 rev_psnr=9.79 all_lpips=0.3444 bank=3696.0MB peak=17.66GiB wan=102.55s vae=7.63s
+[2026-10-23 09:54:47] --- 图 4/10: 0003.png ---
+[2026-10-23 09:58:50]   [full_kv] revisit_lpips=0.4381 psnr=14.89 ssim=0.5414 wan=230.83s vae=7.71s
+[2026-10-23 09:59:31]   [fastar_full@0.8] rev_lpips=0.4538 rev_psnr=15.17 all_lpips=0.2472 bank=1990.0MB peak=17.26GiB wan=32.44s vae=7.65s
+[2026-10-23 09:59:56]   [quanevict   ] rev_lpips=0.5187 rev_psnr=14.32 all_lpips=0.1945 bank=2536.8MB peak=17.68GiB wan=15.48s vae=7.63s
+[2026-10-23 10:00:21]   [quanevict_plus] rev_lpips=0.5239 rev_psnr=14.32 all_lpips=0.1993 bank=1279.3MB peak=16.73GiB wan=15.45s vae=7.62s
+[2026-10-23 10:00:49]   [worldkv     ] rev_lpips=0.5343 rev_psnr=14.07 all_lpips=0.2046 bank=3897.9MB peak=14.04GiB wan=19.53s vae=7.63s
+[2026-10-23 10:02:41]   [flowcache   ] rev_lpips=0.5082 rev_psnr=14.77 all_lpips=0.2175 bank=3696.0MB peak=17.66GiB wan=102.75s vae=7.64s
+[2026-10-23 10:02:42] --- 图 5/10: 0004.png ---
+[2026-10-23 10:06:45]   [full_kv] revisit_lpips=0.2571 psnr=18.23 ssim=0.5237 wan=230.92s vae=7.71s
+[2026-10-23 10:07:26]   [fastar_full@0.8] rev_lpips=0.2764 rev_psnr=19.25 all_lpips=0.2088 bank=1518.4MB peak=15.90GiB wan=31.72s vae=7.65s
+[2026-10-23 10:07:51]   [quanevict   ] rev_lpips=0.2577 rev_psnr=18.32 all_lpips=0.1277 bank=2536.8MB peak=17.68GiB wan=15.51s vae=7.63s
+[2026-10-23 10:08:15]   [quanevict_plus] rev_lpips=0.2609 rev_psnr=18.28 all_lpips=0.1332 bank=1279.3MB peak=16.73GiB wan=15.47s vae=7.63s
+[2026-10-23 10:08:44]   [worldkv     ] rev_lpips=0.2646 rev_psnr=18.11 all_lpips=0.1342 bank=3897.9MB peak=14.04GiB wan=19.50s vae=7.63s
+[2026-10-23 10:10:36]   [flowcache   ] rev_lpips=0.2963 rev_psnr=18.07 all_lpips=0.1451 bank=3696.0MB peak=17.66GiB wan=102.82s vae=7.63s
+[2026-10-23 10:10:36] --- 图 6/10: 0005.png ---
+[2026-10-23 10:14:40]   [full_kv] revisit_lpips=0.2924 psnr=15.77 ssim=0.4810 wan=230.91s vae=7.70s
+[2026-10-23 10:15:21]   [fastar_full@0.8] rev_lpips=0.2963 rev_psnr=16.03 all_lpips=0.1891 bank=1657.8MB peak=16.28GiB wan=31.95s vae=7.65s
+[2026-10-23 10:15:45]   [quanevict   ] rev_lpips=0.3089 rev_psnr=15.24 all_lpips=0.1326 bank=2536.8MB peak=17.68GiB wan=15.51s vae=7.63s
+[2026-10-23 10:16:10]   [quanevict_plus] rev_lpips=0.3115 rev_psnr=15.14 all_lpips=0.1348 bank=1279.3MB peak=16.73GiB wan=15.48s vae=7.62s
+[2026-10-23 10:16:38]   [worldkv     ] rev_lpips=0.3222 rev_psnr=14.85 all_lpips=0.1378 bank=3897.9MB peak=14.04GiB wan=19.54s vae=7.63s
+[2026-10-23 10:18:31]   [flowcache   ] rev_lpips=0.3263 rev_psnr=15.33 all_lpips=0.1310 bank=3696.0MB peak=17.66GiB wan=102.89s vae=7.64s
+[2026-10-23 10:18:31] --- 图 7/10: 0006.png ---
+[2026-10-23 10:22:35]   [full_kv] revisit_lpips=0.4249 psnr=12.58 ssim=0.1250 wan=230.89s vae=7.71s
+[2026-10-23 10:23:16]   [fastar_full@0.8] rev_lpips=0.4836 rev_psnr=13.00 all_lpips=0.3118 bank=1980.0MB peak=17.25GiB wan=32.63s vae=7.65s
+[2026-10-23 10:23:41]   [quanevict   ] rev_lpips=0.4629 rev_psnr=12.53 all_lpips=0.2392 bank=2536.8MB peak=17.68GiB wan=15.50s vae=7.63s
+[2026-10-23 10:24:05]   [quanevict_plus] rev_lpips=0.4802 rev_psnr=12.35 all_lpips=0.2524 bank=1279.3MB peak=16.73GiB wan=15.47s vae=7.62s
+[2026-10-23 10:24:34]   [worldkv     ] rev_lpips=0.4776 rev_psnr=12.19 all_lpips=0.2479 bank=3897.9MB peak=14.04GiB wan=19.54s vae=7.63s
+[2026-10-23 10:26:26]   [flowcache   ] rev_lpips=0.4873 rev_psnr=12.04 all_lpips=0.2594 bank=3696.0MB peak=17.66GiB wan=102.96s vae=7.64s
+[2026-10-23 10:26:27] --- 图 8/10: 0007.png ---
+[2026-10-23 10:30:30]   [full_kv] revisit_lpips=0.4545 psnr=12.14 ssim=0.1400 wan=230.93s vae=7.71s
+[2026-10-23 10:31:12]   [fastar_full@0.8] rev_lpips=0.5116 rev_psnr=11.91 all_lpips=0.3380 bank=2181.6MB peak=17.85GiB wan=32.90s vae=7.66s
+[2026-10-23 10:31:37]   [quanevict   ] rev_lpips=0.4999 rev_psnr=11.96 all_lpips=0.2488 bank=2536.8MB peak=17.68GiB wan=15.53s vae=7.63s
+[2026-10-23 10:32:01]   [quanevict_plus] rev_lpips=0.5040 rev_psnr=11.86 all_lpips=0.2522 bank=1279.3MB peak=16.73GiB wan=15.48s vae=7.63s
+[2026-10-23 10:32:30]   [worldkv     ] rev_lpips=0.4910 rev_psnr=11.70 all_lpips=0.2471 bank=3897.9MB peak=14.04GiB wan=19.53s vae=7.63s
+[2026-10-23 10:34:22]   [flowcache   ] rev_lpips=0.5118 rev_psnr=11.71 all_lpips=0.3302 bank=3696.0MB peak=17.66GiB wan=102.93s vae=7.63s
+[2026-10-23 10:34:22] --- 图 9/10: 0008.png ---
+[2026-10-23 10:38:26]   [full_kv] revisit_lpips=0.4782 psnr=14.14 ssim=0.4972 wan=230.95s vae=7.70s
+[2026-10-23 10:39:07]   [fastar_full@0.8] rev_lpips=0.4662 rev_psnr=16.11 all_lpips=0.3147 bank=1573.8MB peak=16.04GiB wan=32.16s vae=7.65s
+[2026-10-23 10:39:32]   [quanevict   ] rev_lpips=0.4602 rev_psnr=14.01 all_lpips=0.1941 bank=2536.8MB peak=17.68GiB wan=15.51s vae=7.63s
+[2026-10-23 10:39:56]   [quanevict_plus] rev_lpips=0.4676 rev_psnr=13.89 all_lpips=0.2021 bank=1279.3MB peak=16.73GiB wan=15.49s vae=7.63s
+[2026-10-23 10:40:25]   [worldkv     ] rev_lpips=0.4588 rev_psnr=13.90 all_lpips=0.2026 bank=3897.9MB peak=14.04GiB wan=19.54s vae=7.63s
+[2026-10-23 10:42:17]   [flowcache   ] rev_lpips=0.4775 rev_psnr=14.06 all_lpips=0.2812 bank=3696.0MB peak=17.66GiB wan=103.00s vae=7.64s
+[2026-10-23 10:42:18] --- 图 10/10: 0009.png ---
+[2026-10-23 10:46:21]   [full_kv] revisit_lpips=0.3979 psnr=15.76 ssim=0.4286 wan=231.03s vae=7.71s
+[2026-10-23 10:47:02]   [fastar_full@0.8] rev_lpips=0.4634 rev_psnr=14.76 all_lpips=0.3035 bank=1652.2MB peak=16.26GiB wan=31.93s vae=7.65s
+[2026-10-23 10:47:27]   [quanevict   ] rev_lpips=0.4712 rev_psnr=13.99 all_lpips=0.2239 bank=2536.8MB peak=17.68GiB wan=15.52s vae=7.62s
+[2026-10-23 10:47:51]   [quanevict_plus] rev_lpips=0.4731 rev_psnr=13.96 all_lpips=0.2244 bank=1279.3MB peak=16.73GiB wan=15.48s vae=7.62s
+[2026-10-23 10:48:20]   [worldkv     ] rev_lpips=0.4658 rev_psnr=13.84 all_lpips=0.2233 bank=3897.9MB peak=14.04GiB wan=19.54s vae=7.63s
+[2026-10-23 10:50:12]   [flowcache   ] rev_lpips=0.4453 rev_psnr=15.14 all_lpips=0.2654 bank=3696.0MB peak=17.66GiB wan=103.36s vae=7.63s
+[2026-10-23 10:50:36] 
+===== 回访帧对指标（跨图平均）=====
+[2026-10-23 10:50:36]   full_kv     : lpips=0.4067226009709494 psnr=13.808620361135734 ssim=0.3529123374394008 fid=127.189615594974 (n=10/10)
+[2026-10-23 10:50:36]   fastar_full@0.8: lpips=0.43612073340586255 psnr=14.123556530658988 ssim=0.36051282180207117 fid=145.55850099549392 (n=10/10)
+[2026-10-23 10:50:36]   quanevict   : lpips=0.43338478037289213 psnr=13.389038637481116 ssim=0.34207905765090674 fid=127.23509668541512 (n=10/10)
+[2026-10-23 10:50:36]   quanevict_plus: lpips=0.4407613383872169 psnr=13.281264506191693 ssim=0.34080337924616677 fid=137.79872346779032 (n=10/10)
+[2026-10-23 10:50:36]   worldkv     : lpips=0.43824112713336943 psnr=13.148118349363054 ssim=0.33776840759175164 fid=132.263565596337 (n=10/10)
+[2026-10-23 10:50:36]   flowcache   : lpips=0.44494831902640203 psnr=13.441724106291057 ssim=0.3395470634102822 fid=147.8942131914094 (n=10/10)
+[2026-10-23 10:50:36] 结果 JSON 已保存到 outputs_full_6methods_10img_51f/results.json
+[2026-10-23 10:50:36] 报告已保存到 outputs_full_6methods_10img_51f/评价报告.md
